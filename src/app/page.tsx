@@ -1,8 +1,10 @@
 import ThemeSwitchButton from "@/components/buttons/theme-switch";
+import SkillsItem from "@/components/skills-item";
+import Skills from "@/constants/Skills";
+import Summary from "@/constants/Summary";
 import {
   Briefcase,
   Linkedin,
-  LucideLocate,
   Mail,
   MapPin,
   Phone,
@@ -41,21 +43,7 @@ const Page = () => {
 
         <section className="space-y-1 p-4 px-5 font-sans">
           <h2 className="text-xs font-bold uppercase">Summary</h2>
-          <p className="text-justify text-base">
-            Welcome to my portfolio website! I am a dynamic professional with a
-            Master&apos;s in Computer Engineering and a diverse background
-            spanning business development, data analytics, and software
-            development. With expertise in designing and implementing innovative
-            data solutions, I have a proven track record of driving impactful
-            results across various industries. From streamlining data pipelines
-            to developing interactive dashboards, I excel in solving complex
-            challenges and delivering actionable insights. Through my projects,
-            including real-time data analysis and machine learning applications,
-            I showcase my passion for innovation and commitment to excellence.
-            Explore my portfolio to learn more about my skills, experiences, and
-            achievements, and feel free to reach out for collaboration
-            opportunities.
-          </p>
+          <p className="text-justify text-base">{Summary}</p>
 
           <div className="flex flex-col gap-2 py-2 text-sm font-bold">
             <div className="flex items-center gap-2">
@@ -162,29 +150,9 @@ const Page = () => {
                 <Wrench />
               </div>
 
-              <div className="my-2">
-                <h3 className="text-sm font-semibold ">Coding Language</h3>
-                <div className="flex flex-wrap gap-2 py-2">
-                  <div className="rounded-lg bg-secondary px-4 py-1  text-xs font-semibold text-secondary-foreground">
-                    Python
-                  </div>
-                  <div className="rounded-lg bg-secondary px-4 py-1  text-xs font-semibold text-secondary-foreground">
-                    SQL
-                  </div>
-                  <div className="rounded-lg bg-secondary px-4 py-1  text-xs font-semibold text-secondary-foreground">
-                    R
-                  </div>
-                  <div className="rounded-lg bg-secondary px-4 py-1 text-xs font-semibold  text-secondary-foreground">
-                    MATLAB
-                  </div>
-                  <div className="rounded-lg bg-secondary px-4 py-1 text-xs font-semibold  text-secondary-foreground">
-                    C++
-                  </div>
-                  <div className="rounded-lg bg-secondary px-4 py-1 text-xs font-semibold  text-secondary-foreground">
-                    C
-                  </div>
-                </div>
-              </div>
+              {Skills.map((skill) => {
+                return <SkillsItem key={skill.title} {...skill} />;
+              })}
             </section>
           </aside>
         </div>
