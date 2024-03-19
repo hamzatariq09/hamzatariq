@@ -7,6 +7,9 @@ const Skills = [{
         "C++",
         "C", "Assembly"
     ]
-}]
+},{
+        title: "Tools",
+        options: ["Jupitor", "Visual Studio", "AWS"],
+    }]
 
 export default Skills;
