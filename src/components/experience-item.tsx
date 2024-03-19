@@ -22,7 +22,7 @@ const ExperienceItem = ({ experience }: Props) => {
       <div className="pl-5">
         <ul className="list-outside list-disc space-y-2">
           {details.map((detail) => {
-            return <li>{detail}.</li>;
+            return <li key={detail}>{detail}</li>;
           })}
         </ul>
       </div>
