@@ -5,7 +5,7 @@ const Skills = [{
         "R",
         "MATLAB",
         "C++",
-        "C"
+        "C", "Assembly"
     ]
 }]
 
