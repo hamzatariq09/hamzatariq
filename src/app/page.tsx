@@ -1,5 +1,7 @@
 import ThemeSwitchButton from "@/components/buttons/theme-switch";
+import ExperienceItem from "@/components/experience-item";
 import SkillsItem from "@/components/skills-item";
+import Experience from "@/constants/Experience";
 import Skills from "@/constants/Skills";
 import Summary from "@/constants/Summary";
 import {
@@ -73,54 +75,14 @@ const Page = () => {
                 <Briefcase />
               </div>
 
-              <div className="my-2">
-                <h3 className="text-sm font-medium">Jul 2023 - Mar 2023</h3>
-                <h1 className="text-lg">
-                  <span className="font-bold text-accent-foreground">
-                    Business Analyst
-                  </span>{" "}
-                  at{" "}
-                  <span className="font-bold text-accent-foreground">
-                    Interlink Engineering
-                  </span>
-                </h1>
-                <div className="pl-5">
-                  <ul className="list-outside list-disc space-y-2">
-                    <li className="">
-                      Designed a sales performance dashboard using Power BI,
-                      reducing report development time by 45%.
-                    </li>
-                    <li className="">
-                      Collaborated with the senior data analyst to develop
-                      internal data warehouses for customer data analysis,
-                      identified potential clients, and uncovered valuable
-                      patterns and trends for strategic decision-making.
-                    </li>
-                    <li className="">
-                      Conducted in-depth data analysis to analyze sales
-                      forecasting, identifying trends pivotal for strategic
-                      decision-making, resulting in a 6% increase in sales.
-                    </li>
-                    <li className="">
-                      Conducted in-depth customer meetings and developed a root
-                      cause report to address problems with customer
-                      conversions, successfully revealing insights that boosted
-                      conversions by 7%.
-                    </li>
-                    <li className="">
-                      Developed a self-service dashboard for the sales team,
-                      resulting in a 32% increase in data-driven
-                      decision-making.
-                    </li>
-                    <li className="">
-                      Collaborated with cross-functional teams to identify data
-                      sources and streamline data collection, ensuring data
-                      quality, integrity, and accuracy, resulting in a 28%
-                      reduction in report development time.
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              {Experience.map((experience) => {
+                return (
+                  <ExperienceItem
+                    experience={experience}
+                    key={experience.time}
+                  />
+                );
+              })}
             </section>
 
             <section className="px-5 py-4">
