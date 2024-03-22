@@ -1,6 +1,8 @@
 import ThemeSwitchButton from "@/components/buttons/theme-switch";
+import EducationItem from "@/components/education-item";
 import ExperienceItem from "@/components/experience-item";
 import SkillsItem from "@/components/skills-item";
+import Education from "@/constants/Education";
 import Experience from "@/constants/Experience";
 import Skills from "@/constants/Skills";
 import Summary from "@/constants/Summary";
@@ -91,18 +93,11 @@ const Page = () => {
                 <School />
               </div>
 
-              <div className="my-2">
-                <h3 className="text-sm font-medium">Dec 2023</h3>
-                <h1 className="text-lg">
-                  <span className="font-bold text-accent-foreground">
-                    Master of Applied Science in Computer Engineering
-                  </span>{" "}
-                  from{" "}
-                  <span className="font-bold text-accent-foreground">
-                    Memorial University of Newfoundland, St. John&apos;s, NL
-                  </span>
-                </h1>
-              </div>
+              {Education.map((education) => {
+                return (
+                  <EducationItem education={education} key={education.date} />
+                );
+              })}
             </section>
           </div>
           <aside>
