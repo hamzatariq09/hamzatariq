@@ -17,20 +17,18 @@ const Experiences: TExperience[] = [
         internal data warehouses for customer data analysis,
         identified potential clients, and uncovered valuable
         patterns and trends for strategic decision-making.`,
-            `Conducted in-depth data analysis to analyze sales
-        forecasting, identifying trends pivotal for strategic
-        decision-making, resulting in a 6% increase in sales.`,
+            `Conducted extensive market research and competitive analysis to identify potential growth opportunities and proposed enhancements to the marketing strategy, resulting in a 6% increase in sales.`,
             `Conducted in-depth customer meetings and developed a root
         cause report to address problems with customer
         conversions, successfully revealing insights that boosted
         conversions by 7%.`,
-            `Developed a self-service dashboard for the sales team,
-        resulting in a 32% increase in data-driven
-        decision-making.`,
+            `Led market research to collect feedback on the company's product range that informed product improvements, resulting in a 15% increase in user satisfaction and a 10% decrease in customer complaints.`,
             `Collaborated with cross-functional teams to identify data
         sources and streamline data collection, ensuring data
         quality, integrity, and accuracy, resulting in a 28%
-        reduction in report development time.`
+        reduction in report development time.`,
+            `Developed Power BI dashboards to identify product features that correlated with customer attrition, leading to a 20% reduction in churn rate, and tracked product KPIs to facilitate strategic decision-making.`,
+            `Collaborated with product managers on cohort analysis, identifying an opportunity to reduce pricing by 22% for a user segment, thus boosting yearly revenue by $132k.`
         ]
     },
 
