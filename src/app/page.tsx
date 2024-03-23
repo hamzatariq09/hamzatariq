@@ -100,7 +100,7 @@ const Page = () => {
               })}
             </section>
           </div>
-          <aside>
+          <aside className="w-1/4">
             <section className="px-5 py-4">
               <div className="flex justify-between border-b-2 py-2">
                 <h1>Skills</h1>
