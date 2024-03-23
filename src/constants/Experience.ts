@@ -8,11 +8,11 @@ export type TExperience = {
 
 const Experiences: TExperience[] = [
     {
-        time: "Jul 2023 - Mar 2023",
+        time: "Nov 2021 - Jan 2023",
         position: "Business Analyst",
         organization: "Interlink Engineering",
         details: [
-            `Designed a sales performance dashboard using Power BI, reducing report development time by 45%.`,
+            `Designed a sales performance dashboard using Power BI and automated data extraction by creating a reliable data pipeline leveraging SQL and SSIS, resulting in a 45% reduction in report development time.`,
             `Collaborated with the senior data analyst to develop
         internal data warehouses for customer data analysis,
         identified potential clients, and uncovered valuable
