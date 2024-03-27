@@ -16,11 +16,11 @@ const Skills = [
         options: ["MS Excel", "SSIS", "AWS",
                   "MS Excel", "Tableau", "Power BI", 
                   "MySQL", "Visual Studio", "DAX"
-                 , "Power Automate", "Power Query", 
+                 ,"MS Access" , "Power Query", 
                   "MySQL", "Airflow", "TensorFlow"
                  , "PyTorch", "Pandas", "NumPy", 
                   "UiPath", "Matplotlib", "Scikit-learn", 
-                  "VBA", "MS Access"],
+                  "VBA", "Power Automate"],
     }
 ]
 
