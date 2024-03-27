@@ -8,7 +8,7 @@ const Skills = [
             "MATLAB",
             "C++",
             "C", "Assembly"
-            , "Verilog"
+            , "Verilog" , "VHDL"
         ]
     },
     {
